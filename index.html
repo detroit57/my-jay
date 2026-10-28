@@ -1,0 +1,130 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FBM | Distribution Management</title>
+  <link rel="stylesheet" href="jayy.css">
+</head>
+<body>
+  <aside class="sidebar">
+    <a class="brand" href="#" aria-label="FBM home">
+      <span class="brand-icon">🍾</span>
+      <span>FBM<small>DRINKS DISTRIBUTION</small></span>
+    </a>
+
+    <nav>
+      <button class="nav-link active" data-page="dashboard">▦ <span>Dashboard</span></button>
+      <button class="nav-link" data-page="inventory">▣ <span>Inventory</span></button>
+      <button class="nav-link" data-page="sales">🛒 <span>Sales & Receipts</span></button>
+      <button class="nav-link" data-page="packaging">♻ <span>Returnable Packaging</span></button>
+      <button class="nav-link" data-page="expenses">₦ <span>Expenses</span></button>
+      <button class="nav-link" data-page="reports">▤ <span>Reports</span></button>
+    </nav>
+
+    <div class="sidebar-bottom">
+      <div class="status-dot"></div>
+      <div><strong>FBM Distribution</strong><small>Management System</small></div>
+    </div>
+  </aside>
+
+  <main class="main">
+    <header class="topbar">
+      <div>
+        <p class="eyebrow">DRINKS DISTRIBUTION</p>
+        <h1 id="pageTitle">Business Overview</h1>
+        <p class="muted" id="pageSubtitle">Monitor your business performance at a glance.</p>
+      </div>
+      <div class="user-area">
+        <span class="avatar">F</span>
+        <div><strong>Jay web</strong><small>Prototype mode</small></div>
+      </div>
+    </header>
+
+    <section id="dashboardPage" class="page">
+      <div class="welcome-banner">
+        <div>
+          <p class="eyebrow">WELCOME TO FBM</p>
+          <h2>Know your numbers. Grow your business.</h2>
+          <p>Manage your stock, record sales and track expenses in one place.</p>
+        </div>
+        <span class="banner-icon">📦</span>
+      </div>
+
+      <div class="section-heading">
+        <div><h2>Today's summary</h2><p class="muted">Illustrative figures — not live business data</p></div>
+        <span class="date-chip" id="todayDate"></span>
+      </div>
+
+      <div class="stats-grid">
+        <article class="stat-card">
+          <div class="stat-top"><span>Stock value</span><span class="stat-icon green">▣</span></div>
+          <h3>₦2,450,000</h3><p>Estimated inventory cost</p>
+        </article>
+        <article class="stat-card">
+          <div class="stat-top"><span>Today's sales</span><span class="stat-icon blue">↗</span></div>
+          <h3>₦485,000</h3><p>Gross sales recorded</p>
+        </article>
+        <article class="stat-card">
+          <div class="stat-top"><span>Today's expenses</span><span class="stat-icon orange">₦</span></div>
+          <h3>₦42,000</h3><p>Operating expenses</p>
+        </article>
+        <article class="stat-card">
+          <div class="stat-top"><span>Estimated profit</span><span class="stat-icon purple">↗</span></div>
+          <h3>₦78,000</h3><p>Sample estimate after costs</p>
+        </article>
+      </div>
+
+      <div class="content-grid">
+        <article class="panel">
+          <div class="panel-heading"><div><h2>Sales overview</h2><p class="muted">Illustrative weekly performance</p></div><span class="pill">This week</span></div>
+          <div class="chart" aria-label="Illustrative sales bar chart">
+            <div class="chart-row"><span>Mon</span><div class="bar-track"><div class="bar" style="width:48%"></div></div><strong>₦240k</strong></div>
+            <div class="chart-row"><span>Tue</span><div class="bar-track"><div class="bar" style="width:65%"></div></div><strong>₦325k</strong></div>
+            <div class="chart-row"><span>Wed</span><div class="bar-track"><div class="bar" style="width:54%"></div></div><strong>₦270k</strong></div>
+            <div class="chart-row"><span>Thu</span><div class="bar-track"><div class="bar" style="width:78%"></div></div><strong>₦390k</strong></div>
+            <div class="chart-row"><span>Fri</span><div class="bar-track"><div class="bar" style="width:68%"></div></div><strong>₦340k</strong></div>
+            <div class="chart-row"><span>Sat</span><div class="bar-track"><div class="bar" style="width:92%"></div></div><strong>₦460k</strong></div>
+            <div class="chart-row"><span>Sun</span><div class="bar-track"><div class="bar" style="width:70%"></div></div><strong>₦350k</strong></div>
+          </div>
+        </article>
+
+        <article class="panel">
+          <div class="panel-heading"><div><h2>Quick actions</h2><p class="muted">Common tasks</p></div></div>
+          <div class="quick-actions">
+            <button class="action-button" data-page="sales"><span>＋</span><div><strong>Record a sale</strong><small>Create a sales record</small></div><b>›</b></button>
+            <button class="action-button" data-page="inventory"><span>▣</span><div><strong>Manage stock</strong><small>View drinks inventory</small></div><b>›</b></button>
+            <button class="action-button" data-page="expenses"><span>₦</span><div><strong>Add an expense</strong><small>Record business spending</small></div><b>›</b></button>
+            <button class="action-button" data-page="packaging"><span>♻</span><div><strong>Track returns</strong><small>Bottles and crates</small></div><b>›</b></button>
+          </div>
+        </article>
+      </div>
+
+      <article class="panel table-panel">
+        <div class="panel-heading"><div><h2>Inventory snapshot</h2><p class="muted">Example products to illustrate the layout</p></div><button class="text-button" data-page="inventory">View inventory →</button></div>
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th>Product</th><th>Category</th><th>Stock</th><th>Unit</th><th>Status</th></tr></thead>
+            <tbody>
+              <tr><td>Star Lager</td><td>Beer</td><td>45</td><td>Crates</td><td><span class="badge good">In stock</span></td></tr>
+              <tr><td>Coca-Cola</td><td>Soft drink</td><td>18</td><td>Cartons</td><td><span class="badge good">In stock</span></td></tr>
+              <tr><td>Eva Water</td><td>Bottled water</td><td>4</td><td>Packs</td><td><span class="badge warning">Check stock</span></td></tr>
+            </tbody>
+          </table>
+        </div>
+      </article>
+    </section>
+
+    <section id="workspacePage" class="page hidden">
+      <article class="panel workspace-panel">
+        <div id="workspaceContent"></div>
+      </article>
+    </section>
+
+    <footer>FBM Drinks Distribution Management System <span>•</span> Prototype v1.0 2026</footer>
+  </main>
+
+  <script src="jayy.js"></script>
+</body>
+</html>
